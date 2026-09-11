@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RANN — Navratri Kurta &amp; Lehenga Edit</title>
+<meta name="description" content="Bandhani kurtas and patola lehenga sets for Navratri, for him and her. Order on WhatsApp or call.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560;0,9..144,650;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#2a0f18;
+  --ink-2:#3c1726;
+  --parchment:#f6ead9;
+  --parchment-2:#efdfc4;
+  --marigold:#cc6a1c;
+  --marigold-dark:#a3540f;
+  --gulal:#9c2049;
+  --gold:#b3872e;
+  --teal:#0e5c52;
+  --line:rgba(42,15,24,.14);
+  --line-light:rgba(246,234,217,.22);
+  --ok:#2f6b4f;
+  --shadow: 0 18px 40px -18px rgba(42,15,24,.35);
+  --radius: 3px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--parchment);
+  color:var(--ink);
+  font-family:'Manrope',sans-serif;
+  font-size:16px;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;}
+button{font-family:inherit;cursor:pointer;}
+h1,h2,h3,h4{font-family:'Fraunces',serif;margin:0;font-weight:650;letter-spacing:-.01em;}
+p{margin:0;}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px;}
+:focus-visible{outline:2px solid var(--marigold-dark);outline-offset:3px;}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important;}
+}
+
+/* ---------- utility marquee bar ---------- */
+.utility{
+  background:var(--ink);
+  color:var(--parchment);
+  overflow:hidden;
+  white-space:nowrap;
+  border-bottom:1px solid var(--line-light);
+}
+.utility__track{
+  display:inline-flex;
+  animation: marquee 32s linear infinite;
+}
+.utility__track span{
+  padding:9px 36px;
+  font-size:13px;
+  letter-spacing:.02em;
+  font-weight:500;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  white-space:nowrap;
+}
+.utility__track span::after{
+  content:"◆";
+  color:var(--marigold);
+  font-size:8px;
+  margin-left:36px;
+}
+@keyframes marquee{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+
+/* ---------- header ---------- */
+header.site{
+  position:sticky;top:0;z-index:40;
+  background:rgba(245,234,217,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 0;
+  gap:20px;
+}
+.brand{
+  display:flex;align-items:baseline;gap:9px;
+  font-family:'Fraunces',serif;
+  font-size:26px;font-weight:650;
+  letter-spacing:.02em;
+  text-decoration:none;
+  white-space:nowrap;
+}
+.brand small{
+  font-family:'Manrope',sans-serif;
+  font-size:10.5px;font-weight:700;
+  letter-spacing:.1em;
+  color:var(--gulal);
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+.nav__links{
+  display:flex;gap:30px;list-style:none;margin:0;padding:0;
+}
+.nav__links a{
+  text-decoration:none;font-size:14.5px;font-weight:600;color:var(--ink);
+  position:relative;padding:4px 0;
+}
+.nav__links a::after{
+  content:"";position:absolute;left:0;right:0;bottom:-3px;height:2px;
+  background:var(--marigold);transform:scaleX(0);transform-origin:left;
+  transition:transform .25s ease;
+}
+.nav__links a:hover::after{transform:scaleX(1);}
+.nav__actions{display:flex;align-items:center;gap:14px;}
+.icon-btn{
+  border:1px solid var(--line);background:transparent;
+  width:42px;height:42px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;transition:border-color .2s, background .2s;
+}
+.icon-btn:hover{border-color:var(--ink);background:rgba(28,19,48,.05);}
+.icon-btn svg{width:19px;height:19px;stroke:var(--ink);fill:none;stroke-width:1.6;}
+.cart-count{
+  position:absolute;top:-5px;right:-5px;
+  background:var(--gulal);color:#fff;
+  font-size:10.5px;font-weight:800;
+  width:19px;height:19px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  border:2px solid var(--parchment);
+}
+.nav__toggle{display:none;}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;
+  padding:64px 0 0;
+  overflow:hidden;
+}
+.hero__grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;
+}
+.hero__eyebrow{
+  font-size:13.5px;font-weight:700;color:var(--gulal);
+  display:flex;align-items:center;gap:10px;margin-bottom:18px;
+}
+.hero__eyebrow .dots{
+  display:inline-flex;gap:4px;
+}
+.hero__eyebrow .dots i{
+  width:5px;height:5px;border-radius:50%;background:var(--marigold);display:block;
+}
+.hero h1{
+  font-size:clamp(38px,4.6vw,60px);
+  line-height:1.04;
+  color:var(--ink);
+}
+.hero h1 em{
+  font-style:italic;color:var(--gulal);font-weight:500;
+}
+.hero p.lede{
+  margin-top:22px;font-size:17px;line-height:1.6;color:#3a2c55;max-width:46ch;
+}
+.hero__ctas{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:14px 26px;border-radius:2px;
+  font-size:14.5px;font-weight:700;text-decoration:none;border:1px solid transparent;
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.btn:active{transform:translateY(1px);}
+.btn--primary{background:var(--ink);color:var(--parchment);}
+.btn--primary:hover{background:var(--ink-2);box-shadow:var(--shadow);}
+.btn--ghost{background:transparent;border-color:var(--ink);color:var(--ink);}
+.btn--ghost:hover{background:var(--ink);color:var(--parchment);}
+.btn--wa{background:var(--ok);color:#fff;}
+.btn--wa:hover{background:#255a41;}
+.btn--full{width:100%;justify-content:center;}
+.btn--sm{padding:10px 18px;font-size:13.5px;}
+
+.hero__meta{
+  display:flex;gap:28px;margin-top:38px;padding-top:26px;border-top:1px solid var(--line);
+}
+.hero__meta div b{display:block;font-family:'Fraunces',serif;font-size:24px;font-weight:650;}
+.hero__meta div span{font-size:12.5px;color:#5a4d73;}
+
+.hero__visual{
+  position:relative;
+  aspect-ratio:4/5;
+  border-radius:4px;
+  overflow:hidden;
+  background:var(--ink);
+}
+.hero__visual img{
+  position:absolute;inset:-1px -1px -1px -1px;
+  width:calc(100% + 2px);height:calc(100% + 2px);
+  object-fit:cover;object-position:top center;
+}
+.hero__tag{
+  position:absolute;left:18px;bottom:18px;
+  background:rgba(245,234,217,.94);
+  padding:14px 18px;border-radius:2px;
+  max-width:230px;
+  box-shadow:var(--shadow);
+}
+.hero__tag b{display:block;font-family:'Fraunces',serif;font-size:15px;font-weight:650;}
+.hero__tag span{font-size:12px;color:#5a4d73;}
+
+/* diamond divider — echoes the mirror-work motif used across the kutch prints */
+.diamond-rule{
+  height:34px;
+  margin:0;
+  background-image:
+    repeating-linear-gradient(45deg, transparent 0 11px, var(--gold) 11px 12.4px, transparent 12.4px 23px),
+    repeating-linear-gradient(-45deg, transparent 0 11px, var(--gold) 11px 12.4px, transparent 12.4px 23px);
+  background-color:var(--ink);
+  opacity:.9;
+}
+
+/* ---------- trust strip ---------- */
+.trust{
+  background:var(--ink);color:var(--parchment);
+  padding:26px 0;
+}
+.trust__grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:22px;
+}
+.trust__item{display:flex;gap:13px;align-items:flex-start;}
+.trust__item svg{width:22px;height:22px;stroke:var(--marigold);fill:none;stroke-width:1.5;flex:none;margin-top:1px;}
+.trust__item b{display:block;font-size:14px;font-weight:700;}
+.trust__item span{font-size:12.5px;color:#c9bedb;}
+
+/* ---------- shop section ---------- */
+.shop{padding:66px 0 30px;}
+.shop__head{
+  display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;
+  margin-bottom:30px;
+}
+.shop__head h2{font-size:clamp(28px,3.2vw,38px);}
+.shop__head p{color:#5a4d73;max-width:44ch;margin-top:10px;font-size:15px;}
+.category-tabs{
+  display:inline-flex;gap:4px;background:var(--parchment-2);
+  padding:4px;border-radius:24px;margin-bottom:22px;
+}
+.category-tabs button{
+  border:none;background:transparent;color:var(--ink);
+  padding:9px 20px;border-radius:20px;font-size:13.5px;font-weight:700;
+  transition:background .18s ease,color .18s ease;
+}
+.category-tabs button.is-active{background:var(--ink);color:var(--parchment);}
+
+.filters{
+  display:flex;gap:9px;flex-wrap:wrap;margin-bottom:34px;
+}
+.chip{
+  border:1px solid var(--line);background:#fff;
+  padding:8px 16px;border-radius:20px;
+  font-size:13px;font-weight:600;
+  display:flex;align-items:center;gap:7px;
+  transition:all .18s ease;
+}
+.chip i.swatch{width:11px;height:11px;border-radius:50%;display:block;border:1px solid rgba(0,0,0,.12);}
+.chip:hover{border-color:var(--ink);}
+.chip.is-active{background:var(--ink);color:var(--parchment);border-color:var(--ink);}
+
+.grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:22px;
+}
+.card{
+  background:#fff;border:1px solid var(--line);
+  border-radius:3px;overflow:hidden;
+  display:flex;flex-direction:column;
+  transition:box-shadow .2s ease, transform .2s ease;
+}
+.card:hover{box-shadow:var(--shadow);transform:translateY(-3px);}
+.card__media{
+  position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--parchment-2);
+  cursor:pointer;
+}
+.card__media img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+.card:hover .card__media img{transform:scale(1.045);}
+.card__badge{
+  position:absolute;top:10px;left:10px;
+  background:var(--gulal);color:#fff;font-size:10.5px;font-weight:800;
+  padding:5px 9px;border-radius:2px;letter-spacing:.03em;
+}
+.card__count{
+  position:absolute;bottom:10px;right:10px;
+  background:rgba(28,19,48,.72);color:#fff;font-size:11px;font-weight:600;
+  padding:4px 8px;border-radius:12px;display:flex;align-items:center;gap:4px;
+}
+.card__count svg{width:11px;height:11px;stroke:#fff;fill:none;stroke-width:2;}
+.card__body{padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.card__title{font-family:'Fraunces',serif;font-size:16.5px;font-weight:600;line-height:1.25;cursor:pointer;}
+.card__sub{font-size:12.5px;color:#77688f;}
+.card__row{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:6px;}
+.card__price b{font-size:16.5px;font-weight:800;}
+.card__price s{font-size:12.5px;color:#a397b8;margin-left:6px;}
+.card__add{
+  border:1px solid var(--ink);background:transparent;color:var(--ink);
+  padding:8px 14px;border-radius:2px;font-size:12.5px;font-weight:700;
+  transition:background .18s ease,color .18s ease;
+  display:flex;align-items:center;gap:6px;
+}
+.card__add:hover{background:var(--ink);color:var(--parchment);}
+.card__add svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;}
+
+/* ---------- how-to ---------- */
+.howto{padding:70px 0;background:var(--parchment-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.howto__head{max-width:52ch;margin-bottom:40px;}
+.howto__head h2{font-size:clamp(26px,3vw,34px);}
+.howto__head p{margin-top:10px;color:#5a4d73;font-size:15px;}
+.howto__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.howto__step{position:relative;padding-left:2px;}
+.howto__num{
+  font-family:'Fraunces',serif;font-size:15px;font-weight:650;color:var(--gulal);
+  display:flex;align-items:center;gap:10px;margin-bottom:12px;
+}
+.howto__num::before{content:"";width:26px;height:1px;background:var(--gold);}
+.howto__step h3{font-size:19px;margin-bottom:8px;}
+.howto__step p{font-size:14px;color:#5a4d73;}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:var(--parchment);padding:60px 0 0;}
+.foot__grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:36px;padding-bottom:44px;
+  border-bottom:1px solid var(--line-light);
+}
+.foot__brand{font-family:'Fraunces',serif;font-size:24px;font-weight:650;}
+.foot__brand small{display:block;font-family:'Manrope',sans-serif;font-size:11px;letter-spacing:.12em;color:var(--marigold);font-weight:700;margin-top:6px;text-transform:uppercase;}
+.foot p{color:#c9bedb;font-size:14px;margin-top:14px;line-height:1.6;max-width:34ch;}
+.foot h4{font-size:13px;letter-spacing:.04em;color:#c9bedb;font-weight:700;margin-bottom:16px;}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px;}
+.foot ul a{color:var(--parchment);text-decoration:none;font-size:14px;}
+.foot ul a:hover{color:var(--marigold);}
+.foot__contact{display:flex;flex-direction:column;gap:14px;}
+.foot__contact a{
+  display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--parchment);
+  font-size:14.5px;font-weight:600;
+}
+.foot__contact svg{width:18px;height:18px;stroke:var(--marigold);fill:none;stroke-width:1.6;flex:none;}
+.foot__bottom{
+  display:flex;justify-content:space-between;align-items:center;padding:22px 0;
+  font-size:12.5px;color:#9686b3;flex-wrap:wrap;gap:10px;
+}
+
+/* ---------- floating contact ---------- */
+.fab{
+  position:fixed;right:22px;bottom:22px;z-index:50;
+  display:flex;flex-direction:column;align-items:flex-end;gap:12px;
+}
+.fab__menu{display:flex;flex-direction:column;gap:10px;margin-bottom:2px;}
+.fab__item{
+  display:flex;align-items:center;gap:10px;
+  background:#fff;border:1px solid var(--line);
+  padding:10px 16px 10px 12px;border-radius:30px;
+  text-decoration:none;color:var(--ink);font-size:13.5px;font-weight:700;
+  box-shadow:var(--shadow);
+  opacity:0;transform:translateY(8px) scale(.96);pointer-events:none;
+  transition:all .2s ease;
+}
+.fab.is-open .fab__item{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}
+.fab__item span.ico{
+  width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;
+}
+.fab__item.wa span.ico{background:#25d366;}
+.fab__item.call span.ico{background:var(--marigold);}
+.fab__item svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:2;}
+.fab__main{
+  width:58px;height:58px;border-radius:50%;
+  background:var(--gulal);border:none;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 12px 26px -8px rgba(194,58,99,.55);
+  transition:transform .25s ease,background .2s ease;
+}
+.fab__main:hover{background:#a52c52;}
+.fab__main svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:1.8;transition:transform .25s ease;}
+.fab.is-open .fab__main svg{transform:rotate(45deg);}
+
+/* ---------- toast ---------- */
+.toast{
+  position:fixed;left:50%;bottom:30px;transform:translate(-50%,20px);
+  background:var(--ink);color:var(--parchment);
+  padding:13px 22px;border-radius:30px;
+  font-size:13.5px;font-weight:600;display:flex;align-items:center;gap:10px;
+  box-shadow:var(--shadow);
+  opacity:0;pointer-events:none;transition:all .28s ease;
+  z-index:80;
+}
+.toast.is-visible{opacity:1;transform:translate(-50%,0);}
+.toast svg{width:16px;height:16px;stroke:#7bd39a;fill:none;stroke-width:2.4;}
+
+/* ---------- overlay/backdrop ---------- */
+.backdrop{
+  position:fixed;inset:0;background:rgba(20,13,34,.58);
+  opacity:0;pointer-events:none;transition:opacity .25s ease;z-index:60;
+}
+.backdrop.is-visible{opacity:1;pointer-events:auto;}
+
+/* ---------- product modal ---------- */
+.modal{
+  position:fixed;inset:0;z-index:70;
+  display:flex;align-items:center;justify-content:center;
+  padding:26px;
+  opacity:0;pointer-events:none;
+  transition:opacity .25s ease;
+}
+.modal.is-visible{opacity:1;pointer-events:auto;}
+.modal__panel{
+  background:#fff;width:100%;max-width:980px;max-height:88vh;
+  border-radius:4px;overflow:hidden;
+  display:grid;grid-template-columns:1fr 1fr;
+  transform:translateY(14px) scale(.98);transition:transform .28s ease;
+  box-shadow:0 40px 80px -20px rgba(0,0,0,.45);
+}
+.modal.is-visible .modal__panel{transform:translateY(0) scale(1);}
+.modal__close{
+  position:absolute;top:18px;right:18px;z-index:2;
+  width:38px;height:38px;border-radius:50%;border:none;
+  background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 16px rgba(0,0,0,.15);
+}
+.modal__close svg{width:16px;height:16px;stroke:var(--ink);fill:none;stroke-width:2;}
+.modal__gallery{position:relative;background:var(--parchment-2);}
+.modal__main{width:100%;height:100%;position:relative;overflow:hidden;aspect-ratio:3/4;}
+.modal__main img{width:100%;height:100%;object-fit:cover;}
+.modal__arrows{position:absolute;inset:0;display:flex;justify-content:space-between;align-items:center;padding:0 12px;pointer-events:none;}
+.modal__arrow{
+  pointer-events:auto;width:36px;height:36px;border-radius:50%;border:none;
+  background:rgba(255,255,255,.85);display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 16px rgba(0,0,0,.18);
+}
+.modal__arrow svg{width:15px;height:15px;stroke:var(--ink);fill:none;stroke-width:2.4;}
+.modal__thumbs{
+  position:absolute;left:0;right:0;bottom:14px;
+  display:flex;gap:7px;justify-content:center;
+}
+.modal__thumbs button{
+  width:8px;height:8px;border-radius:50%;border:none;background:rgba(255,255,255,.55);padding:0;
+}
+.modal__thumbs button.is-active{background:#fff;width:22px;border-radius:5px;}
+.modal__info{
+  padding:34px 34px 28px;overflow-y:auto;display:flex;flex-direction:column;
+}
+.modal__eyebrow{font-size:12px;font-weight:700;color:var(--gulal);letter-spacing:.03em;margin-bottom:8px;}
+.modal__info h3{font-size:26px;line-height:1.15;margin-bottom:10px;}
+.modal__price{display:flex;align-items:baseline;gap:10px;margin-bottom:16px;}
+.modal__price b{font-size:22px;font-weight:800;}
+.modal__price s{color:#a397b8;font-size:14px;}
+.modal__price .save{background:#eef4ee;color:var(--ok);font-size:11.5px;font-weight:700;padding:3px 8px;border-radius:3px;}
+.modal__desc{font-size:14.5px;color:#4a3c66;line-height:1.65;margin-bottom:20px;}
+.modal__field{margin-bottom:18px;}
+.modal__field label{display:block;font-size:12.5px;font-weight:700;letter-spacing:.03em;margin-bottom:9px;}
+.size-row{display:flex;gap:8px;flex-wrap:wrap;}
+.size-opt{
+  border:1px solid var(--line);background:#fff;min-width:44px;height:40px;padding:0 12px;
+  border-radius:2px;font-size:13px;font-weight:700;
+}
+.size-opt.is-active{background:var(--ink);color:#fff;border-color:var(--ink);}
+.qty-row{display:flex;align-items:center;gap:0;width:fit-content;border:1px solid var(--line);border-radius:2px;}
+.qty-row button{width:38px;height:38px;background:transparent;border:none;font-size:17px;font-weight:700;}
+.qty-row span{width:36px;text-align:center;font-weight:700;font-size:14px;}
+.modal__ctas{display:flex;gap:10px;margin-top:6px;}
+.modal__meta{
+  display:flex;gap:18px;margin-top:22px;padding-top:20px;border-top:1px solid var(--line);flex-wrap:wrap;
+}
+.modal__meta div{display:flex;align-items:center;gap:8px;font-size:12.5px;color:#5a4d73;font-weight:600;}
+.modal__meta svg{width:16px;height:16px;stroke:var(--gulal);fill:none;stroke-width:1.7;}
+.modal__related{margin-top:26px;}
+.modal__related h4{font-size:13px;font-weight:700;letter-spacing:.02em;margin-bottom:12px;color:#3a2c55;}
+.related-row{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px;}
+.related-item{flex:none;width:92px;cursor:pointer;}
+.related-item img{width:92px;height:118px;object-fit:cover;border-radius:2px;border:1px solid var(--line);}
+.related-item span{display:block;font-size:11px;margin-top:6px;color:#5a4d73;line-height:1.3;}
+
+/* ---------- cart drawer ---------- */
+.cart-drawer{
+  position:fixed;top:0;right:0;bottom:0;width:420px;max-width:92vw;
+  background:#fff;z-index:75;
+  display:flex;flex-direction:column;
+  transform:translateX(100%);transition:transform .3s ease;
+  box-shadow:-20px 0 50px rgba(0,0,0,.2);
+}
+.cart-drawer.is-open{transform:translateX(0);}
+.cart-head{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:22px 24px;border-bottom:1px solid var(--line);
+}
+.cart-head h3{font-size:20px;}
+.cart-head button{background:none;border:none;width:34px;height:34px;display:flex;align-items:center;justify-content:center;}
+.cart-head button svg{width:17px;height:17px;stroke:var(--ink);fill:none;stroke-width:2;}
+.cart-items{flex:1;overflow-y:auto;padding:10px 24px;}
+.cart-empty{padding:60px 10px;text-align:center;color:#7a6c95;}
+.cart-empty svg{width:48px;height:48px;stroke:#c9bedb;fill:none;stroke-width:1.2;margin:0 auto 16px;}
+.cart-empty p{font-size:14px;margin-bottom:18px;}
+.cart-line{
+  display:flex;gap:13px;padding:16px 0;border-bottom:1px solid var(--line);
+}
+.cart-line img{width:66px;height:84px;object-fit:cover;border-radius:2px;flex:none;}
+.cart-line__info{flex:1;display:flex;flex-direction:column;gap:5px;}
+.cart-line__info b{font-family:'Fraunces',serif;font-size:14.5px;font-weight:600;}
+.cart-line__info span.meta{font-size:12px;color:#77688f;}
+.cart-line__bottom{display:flex;justify-content:space-between;align-items:center;margin-top:auto;}
+.cart-line .qty-row{transform:scale(.88);transform-origin:left center;}
+.cart-line__price{font-weight:800;font-size:14px;}
+.cart-line__remove{background:none;border:none;color:var(--gulal);font-size:12px;font-weight:700;text-decoration:underline;padding:0;}
+.cart-foot{border-top:1px solid var(--line);padding:20px 24px 24px;}
+.cart-sub{display:flex;justify-content:space-between;margin-bottom:6px;font-size:14px;color:#5a4d73;}
+.cart-total{display:flex;justify-content:space-between;margin-bottom:18px;font-size:18px;font-weight:800;font-family:'Fraunces',serif;}
+.cart-note{font-size:11.5px;color:#8a7ba6;margin-top:10px;text-align:center;line-height:1.5;}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .grid{grid-template-columns:repeat(3,1fr);}
+  .trust__grid{grid-template-columns:repeat(2,1fr);row-gap:20px;}
+  .foot__grid{grid-template-columns:1fr 1fr;row-gap:34px;}
+}
+@media (max-width:900px){
+  .hero__grid{grid-template-columns:1fr;}
+  .hero__visual{aspect-ratio:16/10;order:-1;}
+  .howto__grid{grid-template-columns:1fr;}
+  .modal__panel{grid-template-columns:1fr;overflow-y:auto;}
+  .modal__main{aspect-ratio:4/3;}
+}
+@media (max-width:720px){
+  .nav__links{
+    position:fixed;top:73px;left:0;right:0;bottom:0;
+    background:var(--parchment);
+    flex-direction:column;padding:26px 28px;gap:4px;
+    transform:translateX(-100%);transition:transform .25s ease;
+    z-index:39;
+  }
+  .nav__links.is-open{transform:translateX(0);}
+  .nav__links a{display:block;padding:14px 0;border-bottom:1px solid var(--line);font-size:17px;}
+  .nav__toggle{
+    display:flex;width:42px;height:42px;border:1px solid var(--line);border-radius:50%;
+    align-items:center;justify-content:center;background:transparent;
+  }
+  .nav__toggle svg{width:18px;height:18px;stroke:var(--ink);fill:none;stroke-width:1.8;}
+  .grid{grid-template-columns:repeat(2,1fr);gap:14px;}
+  .card__title{font-size:14.5px;}
+  .card__price b{font-size:14.5px;}
+  .foot__grid{grid-template-columns:1fr;}
+  .cart-drawer{width:100vw;max-width:100vw;}
+}
+@media (max-width:480px){
+  .wrap{padding:0 18px;}
+  .hero{padding-top:40px;}
+  .hero__meta{gap:20px;}
+  .hero__meta div b{font-size:19px;}
+  .grid{grid-template-columns:repeat(2,1fr);gap:10px;}
+  .fab{right:14px;bottom:14px;}
+  .brand{font-size:21px;gap:6px;}
+  .brand small{font-size:8.8px;letter-spacing:.07em;}
+  .nav{gap:10px;}
+  .nav__actions{gap:8px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ UTILITY MARQUEE ============ -->
+<div class="utility">
+  <div class="utility__track" id="marqueeTrack">
+    <span>Navratri Edit now live — order on WhatsApp for same-day confirmation<span></span></span>
+    <span>Call or message +91 70960 67532 for sizing help<span></span></span>
+    <span>Cash on delivery available across India<span></span></span>
+    <span>Navratri Edit now live — order on WhatsApp for same-day confirmation<span></span></span>
+    <span>Call or message +91 70960 67532 for sizing help<span></span></span>
+    <span>Cash on delivery available across India<span></span></span>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site">
+  <div class="wrap nav">
+    <a href="#top" class="brand">RANN<small>Kurta House</small></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#shop">Shop the Edit</a></li>
+      <li><a href="#howto">How to Order</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav__actions">
+      <a class="icon-btn" href="https://wa.me/917096067532" target="_blank" rel="noopener" aria-label="Message us on WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M4 20l1.4-4.2A8 8 0 1 1 9 18.6L4 20Z"/><path d="M8.5 9.5c.3 2 2 4 4 4.5"/></svg>
+      </a>
+      <button class="icon-btn" id="cartToggle" aria-label="Open cart">
+        <svg viewBox="0 0 24 24"><path d="M4 6h2l1.4 10.5A2 2 0 0 0 9.4 18h7.2a2 2 0 0 0 2-1.7L20 8H6"/><circle cx="9.5" cy="21" r="1.3"/><circle cx="17" cy="21" r="1.3"/></svg>
+        <span class="cart-count" id="cartCount" style="display:none;">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__grid">
+      <div>
+        <div class="hero__eyebrow"><span class="dots"><i></i><i></i><i></i></span> NAVRATRI 2026 · FOR HIM &amp; HER</div>
+        <h1>Kurtas &amp; lehengas for<br>nine nights of <em>garba</em>.</h1>
+        <p class="lede">Hand-picked bandhani, Kutch mirror-work and patola-print lehenga sets — the kind your dadi would recognise from Bhuj and your friends will ask about on the dandiya floor.</p>
+        <div class="hero__ctas">
+          <a href="#shop" class="btn btn--primary">
+            Shop the Edit
+            <svg width="15" height="15" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="https://wa.me/917096067532?text=Hi%2C%20I%20want%20to%20know%20more%20about%20the%20Navratri%20collection" target="_blank" rel="noopener" class="btn btn--ghost">Ask on WhatsApp</a>
+        </div>
+        <div class="hero__meta">
+          <div><b>18</b><span>Styles this drop</span></div>
+          <div><b>2</b><span>Edits — his &amp; hers</span></div>
+          <div><b>7096 067532</b><span>Call or message directly</span></div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <img src="images/1000374781.jpg" alt="Model twirling in a black patola-print lehenga with a red ikat dupatta" loading="eager">
+        <div class="hero__tag">
+          <b>Kaaya Black Patola Lehenga</b>
+          <span>Elephant-border dupatta, ₹5,499</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="diamond-rule" style="margin-top:56px;" aria-hidden="true"></div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust">
+  <div class="wrap trust__grid">
+    <div class="trust__item">
+      <svg viewBox="0 0 24 24"><path d="M20 7 9 18l-5-5"/></svg>
+      <div><b>Verified prints</b><span>Sourced from Bhuj &amp; Jaipur karigars, for him &amp; her</span></div>
+    </div>
+    <div class="trust__item">
+      <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+      <div><b>Cash on delivery</b><span>Pay when your parcel arrives</span></div>
+    </div>
+    <div class="trust__item">
+      <svg viewBox="0 0 24 24"><path d="M4 20l1.4-4.2A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+      <div><b>Order on WhatsApp</b><span>No account or app download needed</span></div>
+    </div>
+    <div class="trust__item">
+      <svg viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>
+      <div><b>Easy exchange</b><span>Wrong size swapped within 5 days</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHOP ============ -->
+<section class="shop" id="shop">
+  <div class="wrap">
+    <div class="shop__head">
+      <div>
+        <h2>Shop the Navratri Edit</h2>
+        <p>Eighteen pieces across kurtas and patola lehenga sets. Tap any piece to see the full gallery, sizes and matching colours.</p>
+      </div>
+    </div>
+    <div class="category-tabs" id="categoryTabs"></div>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- ============ HOW TO ORDER ============ -->
+<section class="howto" id="howto">
+  <div class="wrap">
+    <div class="howto__head">
+      <h2>How ordering works</h2>
+      <p>We keep it simple — build your cart here, then confirm the order in one WhatsApp message. No sign-up, no payment gateway forms.</p>
+    </div>
+    <div class="howto__grid">
+      <div class="howto__step">
+        <div class="howto__num">01</div>
+        <h3>Pick your pieces</h3>
+        <p>Browse the edit, choose a size and add each kurta to your cart. Everything updates instantly, right here on the page.</p>
+      </div>
+      <div class="howto__step">
+        <div class="howto__num">02</div>
+        <h3>Send us your cart</h3>
+        <p>Tap "Order on WhatsApp" and your selections, sizes and quantities are drafted into a message — just hit send.</p>
+      </div>
+      <div class="howto__step">
+        <div class="howto__num">03</div>
+        <h3>We confirm &amp; ship</h3>
+        <p>We confirm availability, pin code and payment mode over WhatsApp or a quick call, then dispatch within 48 hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="shop" id="about" style="padding-top:20px;">
+  <div class="wrap">
+    <div class="hero__grid" style="align-items:flex-start;">
+      <div>
+        <h2 style="font-size:clamp(26px,3vw,34px);margin-bottom:16px;">Rann, in one line</h2>
+        <p style="color:#4a3c66;font-size:15.5px;line-height:1.7;max-width:56ch;">We're a small team sourcing bandhani, patola weaves and hand block prints directly from karigar clusters in Gujarat and Rajasthan, and stitching them into kurtas and lehenga sets that hold up through nine nights of dancing — for him and for her. Every piece on this page is photographed as it actually looks — no filters, no oversized fit tricks.</p>
+        <div style="display:flex;gap:32px;margin-top:26px;flex-wrap:wrap;">
+          <div><b style="font-family:'Fraunces',serif;font-size:22px;display:block;">6+</b><span style="font-size:12.5px;color:#5a4d73;">Print clusters worked with</span></div>
+          <div><b style="font-family:'Fraunces',serif;font-size:22px;display:block;">S–XXL</b><span style="font-size:12.5px;color:#5a4d73;">Sizes across the edit</span></div>
+        </div>
+      </div>
+      <div class="hero__visual" style="aspect-ratio:4/5;">
+        <img src="images/1000374804.jpg" alt="Model wearing an emerald green patola lehenga with a red ikat dupatta" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot">
+        <div class="foot__brand">RANN<small>Kurta House</small></div>
+        <p>Bandhani, Kutch mirror-work and hand block print kurtas for Navratri and beyond, shipped across India.</p>
+      </div>
+      <div class="foot">
+        <h4>SHOP</h4>
+        <ul>
+          <li><a href="#shop">Full Edit</a></li>
+          <li><a href="#shop">Bandhani</a></li>
+          <li><a href="#shop">Kutch Prints</a></li>
+          <li><a href="#howto">How to Order</a></li>
+        </ul>
+      </div>
+      <div class="foot">
+        <h4>HELP</h4>
+        <ul>
+          <li><a href="#" data-size-guide>Size guide</a></li>
+          <li><a href="https://wa.me/917096067532" target="_blank" rel="noopener">Track my order</a></li>
+          <li><a href="https://wa.me/917096067532" target="_blank" rel="noopener">Exchange a piece</a></li>
+          <li><a href="#about">About us</a></li>
+        </ul>
+      </div>
+      <div class="foot">
+        <h4>REACH US</h4>
+        <div class="foot__contact">
+          <a href="tel:+917096067532">
+            <svg viewBox="0 0 24 24"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4a2 2 0 0 1-2 2C10 21 3 14 3 6a2 2 0 0 1 1-2Z"/></svg>
+            +91 70960 67532 · Call
+          </a>
+          <a href="https://wa.me/917096067532" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M4 20l1.4-4.2A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+            +91 70960 67532 · WhatsApp
+          </a>
+          <a href="mailto:hello@rannkurta.in">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+            hello@rannkurta.in
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="foot__bottom">
+      <span>© 2026 Rann Kurta House. Made for the nine nights.</span>
+      <span>Prices inclusive of all taxes</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING CONTACT ============ -->
+<div class="fab" id="fab">
+  <div class="fab__menu">
+    <a class="fab__item wa" href="https://wa.me/917096067532?text=Hi%2C%20I%27d%20like%20to%20order%20from%20the%20Navratri%20Edit" target="_blank" rel="noopener">
+      <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 20l1.4-4.2A8 8 0 1 1 9 18.6L4 20Z"/></svg></span>
+      Message us
+    </a>
+    <a class="fab__item call" href="tel:+917096067532">
+      <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4a2 2 0 0 1-2 2C10 21 3 14 3 6a2 2 0 0 1 1-2Z"/></svg></span>
+      Call 7096067532
+    </a>
+  </div>
+  <button class="fab__main" id="fabMain" aria-label="Contact options">
+    <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+  </button>
+</div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast">
+  <svg viewBox="0 0 24 24"><path d="M20 7 9 18l-5-5"/></svg>
+  <span id="toastMsg">Added to cart</span>
+</div>
+
+<!-- ============ BACKDROP ============ -->
+<div class="backdrop" id="backdrop"></div>
+
+<!-- ============ PRODUCT MODAL ============ -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Product details">
+  <div class="modal__panel">
+    <button class="modal__close" id="modalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke-linecap="round"/></svg>
+    </button>
+    <div class="modal__gallery">
+      <div class="modal__main">
+        <img id="modalImg" src="" alt="">
+        <div class="modal__arrows">
+          <button class="modal__arrow" id="modalPrev" aria-label="Previous photo"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <button class="modal__arrow" id="modalNext" aria-label="Next photo"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+        <div class="modal__thumbs" id="modalThumbs"></div>
+      </div>
+    </div>
+    <div class="modal__info">
+      <div class="modal__eyebrow" id="modalEyebrow">BANDHANI · NAVRATRI EDIT</div>
+      <h3 id="modalTitle">Product name</h3>
+      <div class="modal__price">
+        <b id="modalPrice">₹0</b>
+        <s id="modalMrp"></s>
+        <span class="save" id="modalSave"></span>
+      </div>
+      <p class="modal__desc" id="modalDesc"></p>
+
+      <div class="modal__field">
+        <label>Select size</label>
+        <div class="size-row" id="modalSizes"></div>
+      </div>
+
+      <div class="modal__field">
+        <label>Quantity</label>
+        <div class="qty-row" id="modalQty">
+          <button data-dir="-1" aria-label="Decrease quantity">−</button>
+          <span id="modalQtyVal">1</span>
+          <button data-dir="1" aria-label="Increase quantity">+</button>
+        </div>
+      </div>
+
+      <div class="modal__ctas">
+        <button class="btn btn--primary btn--full" id="modalAdd">
+          Add to Cart
+          <svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 6h2l1.4 10.5A2 2 0 0 0 9.4 18h7.2a2 2 0 0 0 2-1.7L20 8H6"/></svg>
+        </button>
+      </div>
+
+      <div class="modal__meta">
+        <div><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>Cash on delivery</div>
+        <div><svg viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>5-day exchange</div>
+        <div><svg viewBox="0 0 24 24"><path d="M20 7 9 18l-5-5"/></svg>Ships in 48 hrs</div>
+      </div>
+
+      <div class="modal__related" id="modalRelated">
+        <h4 id="modalRelatedTitle">More in this colour</h4>
+        <div class="related-row" id="relatedRow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="cart-head">
+    <h3>Your cart</h3>
+    <button id="cartClose" aria-label="Close cart"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke-linecap="round"/></svg></button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-foot" id="cartFoot">
+    <div class="cart-sub"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
+    <div class="cart-total"><span>Total</span><span id="cartTotal">₹0</span></div>
+    <a class="btn btn--wa btn--full" id="cartCheckout" href="#" target="_blank" rel="noopener">
+      Order on WhatsApp
+      <svg width="15" height="15" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <div class="cart-note">Cash on delivery available · You'll confirm size &amp; address on WhatsApp before dispatch</div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
